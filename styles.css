@@ -1,0 +1,215 @@
+
+body {
+    font-family: 'Be Vietnam', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+}
+
+
+header {
+    background-color: hsl(0, 0%, 98%);
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: hsl(228, 39%, 23%);
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.hero div {
+    flex: 1;
+}
+
+.hero img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Features Section (what's different and 01, 02, 03) */
+.features {
+    padding: 50px 0;
+}
+
+.feature-list {
+    margin-top: 40px;
+}
+
+.feature-item {
+    margin-bottom: 30px;
+}
+
+.feature-item h3 {
+    display: flex;
+    align-items: center;
+}
+
+.feature-item h3 span {
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+/* Testimonial text, pictures and a heading */
+.testimonials {
+    background-color: hsl(0, 0%, 98%);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial-list {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.testimonial-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: left;
+    flex: 0 0 auto;
+    width: 300px;
+}
+
+.testimonial-item img {
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* simplify how your team works section (SHTW)*/
+.SHTW {
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+footer {
+    background-color: hsl(233, 12%, 13%);
+    color: white;
+    padding: 50px 0;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+}
+
+.footer-form button {
+    background-color: hsl(12, 88%, 59%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+footer .copyright {
+    text-align: right;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .features {
+        text-align: center;
+    }
+
+    footer .container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    footer .copyright {
+        text-align: center;
+    }
+}
